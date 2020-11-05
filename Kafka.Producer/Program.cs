@@ -55,7 +55,7 @@ namespace Kafka.Producer
                         var jsonMsg = JsonConvert.SerializeObject(msg);
 
                         // push to Kafka
-                        await producer.ProduceAsync("topic_messages1", new Message<Null, string> { Value = jsonMsg });
+                        await producer.ProduceAsync("topic_messages", new Message<Null, string> { Value = jsonMsg });
                     }
 
                     // produce message to Kafka
