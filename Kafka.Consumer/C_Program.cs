@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kafka.Consumer
 {
-    class Program
+    class C_Program
     {
         static async Task Main(string[] args)
         {
@@ -14,8 +14,9 @@ namespace Kafka.Consumer
             {
                 var config = new ConsumerConfig
                 {
-                   // BootstrapServers = "127.0.0.1:9092",
-                    BootstrapServers = "192.168.16.48:9092",
+                    // BootstrapServers = "127.0.0.1:9092",
+                  //  BootstrapServers = "192.168.16.133:9093",
+                    BootstrapServers = "39.99.144.108:8807",
                     // Disable auto-committing of offsets.
                     EnableAutoCommit = false,
                     GroupId = "consumer-group-1"

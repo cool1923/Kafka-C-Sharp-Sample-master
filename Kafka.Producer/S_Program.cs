@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Kafka.Producer
 {
-    class Program
+    class S_Program
     {
         static async Task Main(string[] args)
         {
@@ -21,7 +21,8 @@ namespace Kafka.Producer
                 {
                     Acks = Acks.All,
                     // BootstrapServers = "127.0.0.1:9092",
-                    BootstrapServers = "192.168.16.48:9092",
+                 //  BootstrapServers = "192.168.16.48:9092",
+                   BootstrapServers = "39.99.144.108:8807",
                     ClientId = Dns.GetHostName(),
                 };
 
